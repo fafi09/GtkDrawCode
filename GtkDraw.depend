@@ -1,0 +1,4 @@
+# depslib dependency file v1.0
+1601275814 source:/home/fafi/wxwidgetsws/GtkDraw/main.c
+	<gtk/gtk.h>
+

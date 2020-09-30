@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="GtkDraw" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/GtkDraw" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-pthread -I/snap/gnome-3-34-1804/36/usr/include -I/snap/gnome-3-34-1804/36/usr/include/gtk-3.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/snap/gnome-3-34-1804/36/usr/include/dbus-1.0 -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include -I/snap/gnome-3-34-1804/36/usr/include/gtk-3.0 -I/snap/gnome-3-34-1804/36/usr/include/gio-unix-2.0/ -I/snap/gnome-3-34-1804/36/usr/include -I/snap/gnome-3-34-1804/36/usr/include/cairo -I/snap/gnome-3-34-1804/36/usr/include -I/snap/gnome-3-34-1804/36/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/snap/gnome-3-34-1804/36/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/snap/gnome-3-34-1804/36/usr/include/cairo -I/snap/gnome-3-34-1804/36/usr/include/pixman-1 -I/snap/gnome-3-34-1804/36/usr/include -I/usr/include/freetype2 -I/usr/include/libpng16 -I/snap/gnome-3-34-1804/36/usr/include -I/usr/include/freetype2 -I/snap/gnome-3-34-1804/36/usr/include/libpng16 -I/snap/gnome-3-34-1804/36/usr/include -I/snap/gnome-3-34-1804/36/usr/include/gdk-pixbuf-2.0 -I/snap/gnome-3-34-1804/36/usr/include/libpng16 -I/snap/gnome-3-34-1804/36/usr/include -I/snap/gnome-3-34-1804/36/usr/include/glib-2.0 -I/snap/gnome-3-34-1804/36/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/snap/gnome-3-34-1804/36/usr/include -I/snap/gnome-3-34-1804/36/usr/include/atk-1.0" />
+				</Compiler>
+				<Linker>
+					<Add option="-pthread -lgtk-3 -lgdk-3 -latk-1.0 -lgio-2.0 -lpangoft2-1.0 -lgdk_pixbuf-2.0 -lpangocairo-1.0 -lcairo -lpango-1.0 -lfreetype -lfontconfig -lgobject-2.0 -lgmodule-2.0 -lgthread-2.0 -lrt -lglib-2.0 -lharfbuzz -lfribidi" />
+					<Add directory="/snap/gnome-3-34-1804/36/usr/lib/" />
+					<Add directory="/snap/gnome-3-34-1804/36/usr/lib/x86_64-linux-gnu" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/GtkDraw" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="Barcode128.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Barcode128.h" />
+		<Unit filename="BarcodeBase.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BarcodeBase.h" />
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
